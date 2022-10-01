@@ -18,9 +18,9 @@ int main()
     system("chcp 1251");
 
     double n;
-    cout << "Введите размер массива: ";
+    cout << "Р’РІРµРґРёС‚Рµ СЂР°Р·РјРµСЂ РјР°СЃСЃРёРІР°: ";
     cin >> n;
-    int* mas = new int[n]; // динамический массив
+    int* mas = new int[n]; // РґРёРЅР°РјРёС‡РµСЃРєРёР№ РјР°СЃСЃРёРІ
 
     for (int i = 0; i < n; i++)
     {
@@ -28,24 +28,24 @@ int main()
         cin >> mas[i];
     }
 
-    cout << "Сумма: " << sum(n, mas) << endl << "Среднее значение элементов: " << avrg(n, mas) << endl << "Сумма отрицательных элементов: " << sumo(n, mas) << ", сумма положительных элементов: " << sump(n, mas) << endl << "Сумма элементов с нечет. индексами: " << sumnch(n, mas) << ", сумма элементов с чет. индексами: " << sumch(n, mas) << endl;
-    cout << "Макс. элемент: " << max(n, mas) << ", мин. элемент: " << min(n, mas) << ", произведение элементов между ними: " << p(n, mas);
+    cout << "РЎСѓРјРјР°: " << sum(n, mas) << endl << "РЎСЂРµРґРЅРµРµ Р·РЅР°С‡РµРЅРёРµ СЌР»РµРјРµРЅС‚РѕРІ: " << avrg(n, mas) << endl << "РЎСѓРјРјР° РѕС‚СЂРёС†Р°С‚РµР»СЊРЅС‹С… СЌР»РµРјРµРЅС‚РѕРІ: " << sumo(n, mas) << ", СЃСѓРјРјР° РїРѕР»РѕР¶РёС‚РµР»СЊРЅС‹С… СЌР»РµРјРµРЅС‚РѕРІ: " << sump(n, mas) << endl << "РЎСѓРјРјР° СЌР»РµРјРµРЅС‚РѕРІ СЃ РЅРµС‡РµС‚. РёРЅРґРµРєСЃР°РјРё: " << sumnch(n, mas) << ", СЃСѓРјРјР° СЌР»РµРјРµРЅС‚РѕРІ СЃ С‡РµС‚. РёРЅРґРµРєСЃР°РјРё: " << sumch(n, mas) << endl;
+    cout << "РњР°РєСЃ. СЌР»РµРјРµРЅС‚: " << max(n, mas) << ", РјРёРЅ. СЌР»РµРјРµРЅС‚: " << min(n, mas) << ", РїСЂРѕРёР·РІРµРґРµРЅРёРµ СЌР»РµРјРµРЅС‚РѕРІ РјРµР¶РґСѓ РЅРёРјРё: " << p(n, mas);
 
-    delete[] mas; // удаляем динамический массив
+    delete[] mas; // СѓРґР°Р»СЏРµРј РґРёРЅР°РјРёС‡РµСЃРєРёР№ РјР°СЃСЃРёРІ
 
 }
 
-double sum(int n, int arr[]) // сумма элементов массива
+double sum(int n, int arr[]) // СЃСѓРјРјР° СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°
 {
     double s = 0;
     for (int i = 0; i < n; i++) s += arr[i];
     return s;
 }
-double avrg(int n, int arr[]) // среднее элементов массива
+double avrg(int n, int arr[]) // СЃСЂРµРґРЅРµРµ СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°
 {
     return sum(n, arr) / n;
 }
-double sump(int n, int arr[]) // сумма полож. элементов массива
+double sump(int n, int arr[]) // СЃСѓРјРјР° РїРѕР»РѕР¶. СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°
 {
     double sp = 0;
     for (int i = 0; i < n; i++)
@@ -54,7 +54,7 @@ double sump(int n, int arr[]) // сумма полож. элементов массива
     }
     return sp;
 }
-double sumo(int n, int arr[]) // сумма отриц. элементов массива
+double sumo(int n, int arr[]) // СЃСѓРјРјР° РѕС‚СЂРёС†. СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°
 {
     double so = 0;
     for (int i = 0; i < n; i++)
@@ -63,7 +63,7 @@ double sumo(int n, int arr[]) // сумма отриц. элементов массива
     }
     return so;
 }
-double sumch(int n, int arr[]) // сумма элементов с четными индексами
+double sumch(int n, int arr[]) // СЃСѓРјРјР° СЌР»РµРјРµРЅС‚РѕРІ СЃ С‡РµС‚РЅС‹РјРё РёРЅРґРµРєСЃР°РјРё
 {
     double sch = 0;
     for (int i = 0; i < n; i++)
@@ -72,7 +72,7 @@ double sumch(int n, int arr[]) // сумма элементов с четными индексами
     }
     return sch;
 }
-double sumnch(int n, int arr[]) // сумма элементов с нечетными индексами
+double sumnch(int n, int arr[]) // СЃСѓРјРјР° СЌР»РµРјРµРЅС‚РѕРІ СЃ РЅРµС‡РµС‚РЅС‹РјРё РёРЅРґРµРєСЃР°РјРё
 {
     double snch = 0;
     for (int i = 0; i < n; i++)
@@ -81,7 +81,7 @@ double sumnch(int n, int arr[]) // сумма элементов с нечетными индексами
     }
     return snch;
 }
-double max(int n, int arr[]) // максимальный элемент массива
+double max(int n, int arr[]) // РјР°РєСЃРёРјР°Р»СЊРЅС‹Р№ СЌР»РµРјРµРЅС‚ РјР°СЃСЃРёРІР°
 {
     int max = -100000000000;
     for (int i = 0; i < n; i++)
@@ -90,7 +90,7 @@ double max(int n, int arr[]) // максимальный элемент массива
     }
     return max;
 }
-double maxi(int n, int arr[]) // индекс макс. элемента
+double maxi(int n, int arr[]) // РёРЅРґРµРєСЃ РјР°РєСЃ. СЌР»РµРјРµРЅС‚Р°
 {
     int maxi = 0;
     for (int i = 0; i < n; i++)
@@ -99,7 +99,7 @@ double maxi(int n, int arr[]) // индекс макс. элемента
     }
     return maxi;
 }
-double min(int n, int arr[]) // минимальный элемент массива
+double min(int n, int arr[]) // РјРёРЅРёРјР°Р»СЊРЅС‹Р№ СЌР»РµРјРµРЅС‚ РјР°СЃСЃРёРІР°
 {
     int min = 100000000000;
     for (int i = 0; i < n; i++)
@@ -108,7 +108,7 @@ double min(int n, int arr[]) // минимальный элемент массива
     }
     return min;
 }
-double mini(int n, int arr[]) // индекс мин. элемента
+double mini(int n, int arr[]) // РёРЅРґРµРєСЃ РјРёРЅ. СЌР»РµРјРµРЅС‚Р°
 {
     int mini = 0;
     for (int i = 0; i < n; i++)
@@ -117,7 +117,7 @@ double mini(int n, int arr[]) // индекс мин. элемента
     }
     return mini;
 }
-double p(int n, int arr[]) // произведение элементов между макс. и мин. элементами
+double p(int n, int arr[]) // РїСЂРѕРёР·РІРµРґРµРЅРёРµ СЌР»РµРјРµРЅС‚РѕРІ РјРµР¶РґСѓ РјР°РєСЃ. Рё РјРёРЅ. СЌР»РµРјРµРЅС‚Р°РјРё
 {
     int st = mini(n, arr), f = maxi(n, arr);
     if (mini(n, arr) > maxi(n, arr)) { st = maxi(n, arr); f = mini(n, arr); }
