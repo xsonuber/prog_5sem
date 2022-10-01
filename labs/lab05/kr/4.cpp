@@ -12,23 +12,23 @@ int main()
 	cout << "Enter command (choose flag -s or -p): ";
 	getline(cin, str);
 
-	if (check(str) == -1) { cout << "Error!"; return 0; } // ïğîâåğêà ââîäà ïîëüçîâàòåëÿ íà êîëè÷åñòâî àğãóìåíòîâ
+	if (check(str) == -1) { cout << "Error!"; return 0; } // Ğ¿Ñ€Ğ¾Ğ²ĞµÑ€ĞºĞ° Ğ²Ğ²Ğ¾Ğ´Ğ° Ğ¿Ğ¾Ğ»ÑŒĞ·Ğ¾Ğ²Ğ°Ñ‚ĞµĞ»Ñ Ğ½Ğ° ĞºĞ¾Ğ»Ğ¸Ñ‡ĞµÑÑ‚Ğ²Ğ¾ Ğ°Ñ€Ğ³ÑƒĞ¼ĞµĞ½Ñ‚Ğ¾Ğ²
 
 	string arr[4];
 	int j = 0;
-	for (int i = 0; i < str.length(); i++) // ïåğåâîä ââåäåííîé ñòğîêè â ìàññèâ èç ÷åòûğåõ ıëåìåíòîâ
+	for (int i = 0; i < str.length(); i++) // Ğ¿ĞµÑ€ĞµĞ²Ğ¾Ğ´ Ğ²Ğ²ĞµĞ´ĞµĞ½Ğ½Ğ¾Ğ¹ ÑÑ‚Ñ€Ğ¾ĞºĞ¸ Ğ² Ğ¼Ğ°ÑÑĞ¸Ğ² Ğ¸Ğ· Ñ‡ĞµÑ‚Ñ‹Ñ€ĞµÑ… ÑĞ»ĞµĞ¼ĞµĞ½Ñ‚Ğ¾Ğ²
 	{
 		if (str[i] != ' ') arr[j] += str[i];
 		else j++;
 	}
 
-	if (arr[0] != "prog" && arr[0] != "Prog") { cout << "Error!"; return 0; } // ïğîâåğêà ïåğâîãî àğãóìåíòà; îí äîëæåí áûòü "prog" èëè "Prog"
+	if (arr[0] != "prog" && arr[0] != "Prog") { cout << "Error!"; return 0; } // Ğ¿Ñ€Ğ¾Ğ²ĞµÑ€ĞºĞ° Ğ¿ĞµÑ€Ğ²Ğ¾Ğ³Ğ¾ Ğ°Ñ€Ğ³ÑƒĞ¼ĞµĞ½Ñ‚Ğ°; Ğ¾Ğ½ Ğ´Ğ¾Ğ»Ğ¶ĞµĞ½ Ğ±Ñ‹Ñ‚ÑŒ "prog" Ğ¸Ğ»Ğ¸ "Prog"
 
 	cout << "Result: " << op(arr[1], arr[2], arr[3]);
 
 }
 
-int check(string str) // ôóíêöèÿ ïğîâåğêè íà êîë-âî àğãóìåíòîâ
+int check(string str) // Ñ„ÑƒĞ½ĞºÑ†Ğ¸Ñ Ğ¿Ñ€Ğ¾Ğ²ĞµÑ€ĞºĞ¸ Ğ½Ğ° ĞºĞ¾Ğ»-Ğ²Ğ¾ Ğ°Ñ€Ğ³ÑƒĞ¼ĞµĞ½Ñ‚Ğ¾Ğ²
 {
 	int spaces = 0;
 	for (int i = 0; i < str.length(); i++) { if (str[i] == ' ') spaces++; }
@@ -37,7 +37,7 @@ int check(string str) // ôóíêöèÿ ïğîâåğêè íà êîë-âî àğãóìåíòîâ
 	else return 1;
 }
 
-string op(string f, string x, string y) // ôóíêöèÿ, êîòîğàÿ ïğîâåğÿåò ôëàã è ñ÷èòàåò ğåçóëüòàò
+string op(string f, string x, string y) // Ñ„ÑƒĞ½ĞºÑ†Ğ¸Ñ, ĞºĞ¾Ñ‚Ğ¾Ñ€Ğ°Ñ Ğ¿Ñ€Ğ¾Ğ²ĞµÑ€ÑĞµÑ‚ Ñ„Ğ»Ğ°Ğ³ Ğ¸ ÑÑ‡Ğ¸Ñ‚Ğ°ĞµÑ‚ Ñ€ĞµĞ·ÑƒĞ»ÑŒÑ‚Ğ°Ñ‚
 {
 	int xi = stoi(x);
 	int yi = stoi(y);
