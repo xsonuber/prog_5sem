@@ -18,7 +18,7 @@ int main()
 
 int Input(int& a, int& b)
 {
-    cout << "Ââåäèòå a è b: ";
+    cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ a Ğ¸ b: ";
     cin >> a; cin >> b;
 
     if (a >= 0 && a % 2 == 0 && b >= 0 && b % 2 == 0) return true;
