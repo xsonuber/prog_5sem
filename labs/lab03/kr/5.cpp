@@ -15,10 +15,10 @@ int main()
     system("chcp 1251");
 
     int num;
-    cout << "Ââåäèòå ÷èñëî: ";
+    cout << "Введите число: ";
     cin >> num;
 
     num = num * 2;
 
-    cout << "Ðåçóëüòàò: " << binary(num);
+    cout << "Результат: " << binary(num);
 }
