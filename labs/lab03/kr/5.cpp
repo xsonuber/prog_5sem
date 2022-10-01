@@ -6,8 +6,8 @@ string binary(int num)
 {
     num = num / 2;
 
-    if (num == 1) return to_string(num % 2); // доходим до 1 и выходим из функции
-    else return binary(num) + to_string(num % 2); // рекурсия
+    if (num == 1) return to_string(num % 2); // РґРѕС…РѕРґРёРј РґРѕ 1 Рё РІС‹С…РѕРґРёРј РёР· С„СѓРЅРєС†РёРё
+    else return binary(num) + to_string(num % 2); // СЂРµРєСѓСЂСЃРёСЏ
 }
 
 int main()
@@ -15,10 +15,10 @@ int main()
     system("chcp 1251");
 
     int num;
-    cout << "Введите число: ";
+    cout << "Г‚ГўГҐГ¤ГЁГІГҐ Г·ГЁГ±Г«Г®: ";
     cin >> num;
 
     num = num * 2;
 
-    cout << "Результат: " << binary(num);
+    cout << "ГђГҐГ§ГіГ«ГјГІГ ГІ: " << binary(num);
 }
