@@ -1,4 +1,3 @@
-
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -10,11 +9,11 @@ int main()
 
 	ofstream out("text", ios::out | ios::binary);
 	if (!out) {
-		cout << "Ôàéë îòêðûòü íåâîçìîæíî\n";
+		cout << "Ð¤Ð°Ð¹Ð» Ð¾Ñ‚ÐºÑ€Ñ‹Ñ‚ÑŒ Ð½ÐµÐ²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾\n";
 		return 1;
 	}
 
-	cout << "Ââåäèòå ñòèõîòâîðåíèå. Çàâåðøèòå åãî, íàæàâ äâà ðàçà Enter: \n";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑ‚Ð¸Ñ…Ð¾Ñ‚Ð²Ð¾Ñ€ÐµÐ½Ð¸Ðµ. Ð—Ð°Ð²ÐµÑ€ÑˆÐ¸Ñ‚Ðµ ÐµÐ³Ð¾, Ð½Ð°Ð¶Ð°Ð² Ð´Ð²Ð° Ñ€Ð°Ð·Ð° Enter: \n";
 	string line = "";
 	do {
 		getline(cin, line);
@@ -26,11 +25,11 @@ int main()
 
 	ifstream in("text", ios::in | ios::binary);
 	if (!in) {
-		cout << "Ôàéë îòêðûòü íåâîçìîæíî";
+		cout << "Ð¤Ð°Ð¹Ð» Ð¾Ñ‚ÐºÑ€Ñ‹Ñ‚ÑŒ Ð½ÐµÐ²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾";
 		return 1;
 	}
 	
-	cout << "Âàøå ñòèõîòâîðåíèå: \n";
+	cout << "Ð’Ð°ÑˆÐµ ÑÑ‚Ð¸Ñ…Ð¾Ñ‚Ð²Ð¾Ñ€ÐµÐ½Ð¸Ðµ: \n";
 	string reading;
 	if (in.is_open())
 	{
