@@ -1,0 +1,56 @@
+Name of the University: itmo
+Rector of itmo: 
+Info:
+FIO: sdfdsf dfs sd
+ID: 171152
+Wage: 1692.780000
+
+Teachers of itmo
+Info:
+FIO: dsf sdf sdf
+ID: 174094
+Subject: kdsfjsf
+Wage: 463.050000
+
+Info:
+FIO: a a a
+ID: 761423
+Subject: Math
+Wage: 13.500000
+
+Info:
+FIO: b b b
+ID: 221685
+Subject: English
+Wage: 27.000000
+
+Info:
+FIO: c c c
+ID: 761892
+Subject: OBJ
+Wage: 40.500000
+
+Students of itmo
+Info:
+FIO: fsdf sdf sdf
+ID: 882455
+Mean grade: 4.500000
+Loan: 384.480000
+
+Info:
+FIO: a a a
+ID: 795431
+Mean grade: 3.450000
+Loan: 0.000000
+
+Info:
+FIO: b b b
+ID: 233411
+Mean grade: 2.870000
+Loan: 0.000000
+
+Info:
+FIO: c c c
+ID: 387427
+Mean grade: 4.240000
+Loan: 43.200000
